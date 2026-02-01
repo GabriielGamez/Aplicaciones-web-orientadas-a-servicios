@@ -1,5 +1,5 @@
 <?php 
-  $ruta = "./"; 
+  $ruta = ""; 
   include 'includes/header.php'; 
 ?>
 
@@ -21,7 +21,7 @@
                 <p>Soy estudiante de T.S.U en Desarrollo de Software Multiplataforma en la Universidad Tecnológica de la Huasteca Hidalguense. <br> Este es el espacio donde documento mi aprendizaje, subo mis prácticas y construyo mi futuro como desarrollador.</p>
 
                 <div class="cta-buttons">
-                    <a href="Practicas/index.html" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="Practicas/index.php" class="btn btn-primary">Ver Proyectos</a>
                     <a href="#curriculum" class="btn btn-outline">Sobre Mí</a>
                     <a href="#contacto" class="btn btn-outline">Contacto</a>
                 </div>
