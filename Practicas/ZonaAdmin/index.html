@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ZonaAdmin | Panel de Control</title>
+    <link rel="stylesheet" href="../../styles.css?v=2.2">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="diseno-admin">
+
+    <aside class="barra-lateral">
+        <div class="encabezado-lateral">
+            <div class="logo">ZONA<span>ADMIN</span>_</div>
+            <p class="etiqueta-admin">Panel de Gestión</p>
+        </div>
+        
+        <nav class="navegacion-lateral">
+            <ul>
+                <li><a href="#" class="activo">📦 Inventario</a></li>
+                <li><a href="agregar.html">➕ Nuevo Producto</a></li>
+                <li><a href="../../index.html">🏠 Regresar al Inicio</a></li>
+            </ul>
+        </nav>
+
+        <div class="pie-lateral">
+            <p>Gabriel Gámez</p>
+            <span>Estudiante de T.S.U. UTHH</span>
+        </div>
+    </aside>
+
+    <main class="contenido-principal">
+        <header class="barra-superior">
+            <div class="contenedor-busqueda">
+                <input type="text" id="busquedaInput" placeholder="Buscar por nombre y presiona Enter...">
+            </div>
+            <div class="perfil-usuario">
+                <span class="punto-estado"></span> En línea
+            </div>
+        </header>
+
+        <section class="area-gestion">
+            <div class="bloque-estadisticas">
+                <div class="tarjeta-dato">
+                    <span class="texto-secundario">Total Productos</span>
+                    <h2 id="totalProductos">0</h2>
+                </div>
+                <div class="tarjeta-dato">
+                    <span class="texto-secundario">Categoría</span>
+                    <h2 id="categoriaActual">Todas</h2>
+                </div>
+            </div>
+
+            <div class="filtros-admin">
+                <select id="filtroCategoria">
+                    <option value="">Todas las Categorías</option>
+                </select>
+                <select id="filtroOrden">
+                    <option value="title-asc">Nombre (A-Z)</option>
+                    <option value="price-desc">Precio (Más caro)</option>
+                    <option value="price-asc">Precio (Más barato)</option>
+                </select>
+            </div>
+
+            <div class="contenedor-tabla">
+                <table class="tabla-admin">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Imagen</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="controles-paginacion">
+                <button id="anteriorBtn" class="boton boton-contorno">Anterior</button>
+                <span id="textoPaginacion">Cargando...</span>
+                <button id="siguienteBtn" class="boton boton-contorno">Siguiente</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

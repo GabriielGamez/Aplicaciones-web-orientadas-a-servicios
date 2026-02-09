@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZonaAdmin | Agregar Producto</title>
+    <link rel="stylesheet" href="../../styles.css?v=2.4">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="diseno-admin">
+
+    <aside class="barra-lateral">
+        <div class="encabezado-lateral">
+            <div class="logo">ZONA<span>ADMIN</span>_</div>
+            <p class="etiqueta-admin">Panel de Gestión</p>
+        </div>
+        <nav class="navegacion-lateral">
+            <ul>
+                <li><a href="index.html">📦 Inventario</a></li>
+                <li><a href="agregar.html" class="activo">➕ Nuevo Producto</a></li>
+                <li><a href="../../index.html">🏠 Inicio</a></li>
+            </ul>
+        </nav>
+        <div class="pie-lateral">
+            <p>Gabriel Gámez</p>
+            <span>UTHH - 2026</span>
+        </div>
+    </aside>
+
+    <main class="contenido-principal">
+        <header class="barra-superior">
+            <h2 style="font-size: 1.2rem;">Gestión de Inventario</h2>
+            <div class="perfil-usuario"><span class="punto-estado"></span> Activo</div>
+        </header>
+
+        <section class="area-gestion">
+            <div style="max-width: 700px; margin: 0 auto; background: #111; padding: 40px; border-radius: 15px; border: 1px solid var(--rojo-vivo);">
+                <h1 style="color: var(--rojo-vivo); margin-bottom: 30px; border-left: 5px solid var(--rojo-vivo); padding-left: 15px;">
+                    NUEVO <span>PRODUCTO</span>
+                </h1>
+
+                <form id="formularioNuevo">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display:block; color: gray; margin-bottom: 8px;">Nombre del Producto:</label>
+                        <input type="text" id="titulo" style="width:100%; padding:12px; background:#000; color:white; border:1px solid #333; border-radius:5px;" required>
+                    </div>
+
+                    <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                        <div style="flex: 1;">
+                            <label style="display:block; color: gray; margin-bottom: 8px;">Precio ($):</label>
+                            <input type="number" id="precio" step="0.01" style="width:100%; padding:12px; background:#000; color:white; border:1px solid #333; border-radius:5px;" required>
+                        </div>
+                        <div style="flex: 1;">
+                            <label style="display:block; color: gray; margin-bottom: 8px;">Categoría (Dinámica):</label>
+                            <select id="categoria" style="width:100%; padding:12px; background:#000; color:white; border:1px solid #333; border-radius:5px; cursor:pointer;">
+                                <option value="">Cargando opciones...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <label style="display:block; color: gray; margin-bottom: 8px;">Descripción del Producto:</label>
+                        <textarea id="descripcion" rows="4" style="width:100%; padding:12px; background:#000; color:white; border:1px solid #333; border-radius:5px;" required></textarea>
+                    </div>
+
+                    <div style="display: flex; gap: 15px;">
+                        <button type="submit" class="boton boton-rojo" style="flex: 2; padding: 15px;">GUARDAR REGISTRO</button>
+                        <button type="button" onclick="window.location.href='index.html'" class="boton" style="flex: 1; background: #222; color: white;">CANCELAR</button>
+                    </div>
+                </form>
+
+                <div id="cajaMensaje" style="margin-top: 25px; padding: 15px; border-radius: 5px; display: none; text-align: center;"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
