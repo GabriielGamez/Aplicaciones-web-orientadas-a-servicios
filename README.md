@@ -1,1 +1,4 @@
-# Que onda profe, se me murió la practica DummyJson donde solo muestra todo, pero ahí dejo el dashboard, tuve que modificar muchas cosas para desplegarla, lo arreglaré no hay pex
+# Practicas de Aplicaciones Web Orientado a servicios
+## ahora si ya quedó, voy modifiando esta pagina progresivamente
+
+Web: https://gabriielgamez.github.io/Aplicaciones-web-orientadas-a-servicios 
