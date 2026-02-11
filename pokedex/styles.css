@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    background-image: url("/pokedex/recourses/img/wp2603501.jpg");
+}
+
+form {
+    width: 200px;
+    margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+.logo{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo img{
+    width: 10%;
+}
+
+.cards{
+    position: relative;
+    margin-top: 100px;
+}
+.cards h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.poke-card {
+    position: relative;
+    height: fit-content;
+    max-width: 450px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border: 3px solid black;
+}
+
+.poke-card::before {
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+}
+
+.poke-img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 822px){
+    .logo img{
+        width: 20%;
+    }
+}
+
+@media (max-width: 622px){
+    .logo img{
+        width: 30%;
+    }
+}
