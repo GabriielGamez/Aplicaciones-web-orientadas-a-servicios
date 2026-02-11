@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Actividad | GitHub API</title>
+    <link rel="stylesheet" href="styles.css?v=3.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">G<span>G</span>_</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Practicas/index.html">Prácticas</a></li>
+            <li><a href="github.html" class="active">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="section-container">
+            
+            <div id="perfil-contenedor" class="tarjeta-perfil-github">
+                <p>Cargando perfil de GitHub...</p>
+            </div>
+
+            <div class="layout-github">
+                <div class="repos-seccion">
+                    <h2 class="subtitulo-rojo">Mejores Proyectos (Recientes)</h2>
+                    <div id="repos-contenedor" class="cards-grid">
+                        </div>
+                </div>
+
+                <aside class="comunidad-seccion">
+                    <h3 class="subtitulo-rojo">Comunidad</h3>
+                    <p class="desc-comunidad">Seguidores que confían en mi código:</p>
+                    <div id="seguidores-contenedor" class="seguidores-grid">
+                        </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Gabriel Gámez © 2026 | UTHH</p>
+    </footer>
+
+    <script src="github.js"></script>
+</body>
+</html>
