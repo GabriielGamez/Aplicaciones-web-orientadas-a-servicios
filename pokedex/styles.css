@@ -4,12 +4,12 @@
 }
 
 body{
-    background-image: url("/pokedex/recourses/img/wp2603501.jpg");
+    background-image: url("recourses/img/wp2603501.jpg");
 }
 
 form {
     width: 200px;
-    margin: 20px auto;
+    margin: 20px auto; 
 }
 
 input {
