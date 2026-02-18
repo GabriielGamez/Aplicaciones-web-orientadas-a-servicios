@@ -7,32 +7,34 @@
     <title>Práctica Cloudinary </title>
     <link rel="stylesheet" href="/cloudinmary/styles.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>Practica de subida de Archivos a Cloudinary</h1>
-        <p>Selecciona una imagen para aplicar transformaciones automáticas.</p>
+    <main class="container">
+        <header>
+            <h1>Practica Gestor de Multimedia</h1>
+            <p>Aplicaciones Web Orientadas a Servicios</p>
+        </header>
 
-        <div class="upload-section">
-            <input type="file" id="inputfile" accept="image/*">
-            <button id="btnSubir">Subir Imagen</button>
-        </div>
+        <section class="upload-section">
+            <div class="input-group">
+                <input type="file" id="inputfile" accept="image/*">
+            </div>
+            <button id="btnSubir">Cargar Imagen</button>
+        </section>
 
-        <div id="ver">
+        <section id="ver">
             <p id="textoSubir"></p>
+            
             <div id="spinner" class="loader" style="display: none;"></div>
-
-            <button id="btnReiniciar" style="display: none; background-color: #10b981; margin-top: 10px;">
+            
+            <button id="btnReiniciar" style="display: none;">
                 Subir otra imagen
             </button>
 
             <div class="image-container">
                 <img id="imagen" src="" alt="">
             </div>
-        </div>
-    </div>
-
+        </section>
+    </main>
     <script src="/cloudinmary/main.js"></script>
 </body>
-
 </html>
